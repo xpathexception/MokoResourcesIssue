@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <plural name="character">
+        <item quantity="zero">%d штук</item>
+        <item quantity="one">%d штука</item>
+        <item quantity="two">%d штуки</item>
+        <item quantity="few">%d штуки</item>
+        <item quantity="many">%d штук</item>
+        <item quantity="other">%d штук</item>
+    </plural>
+</resources>
