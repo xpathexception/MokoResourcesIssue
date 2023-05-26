@@ -106,3 +106,11 @@ multiplatformResources {
     multiplatformResourcesPackage = "com.example.myapp"
     multiplatformResourcesClassName = "myappR"
 }
+
+tasks.matching { it.name == "packageDebugResources" }.configureEach {
+    dependsOn(tasks.getByName("generateMRandroidMain"))
+}
+
+tasks.matching { it.name == "extractDeepLinksDebug" }.configureEach {
+    dependsOn(tasks.getByName("generateMRandroidMain"))
+}
